@@ -313,7 +313,7 @@ jurisconsult-agentic-rag/
 | Livrable | Lien |
 |---|---|
 | **Vidéo de présentation** | [(https://youtu.be/EuvapwFRdoM?si=UbKcT1USTJY4vPRh)]|
-| **Rapport de projet** | [Lire le rapport](https://LIEN_DU_RAPPORT) |
+| **Rapport de projet** | [(https://github.com/an-Steve/Agent-IA-RAG/blob/main/AgentIARAG.pdf)] |
 
 ## Auteurs
 
