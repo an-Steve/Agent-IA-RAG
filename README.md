@@ -282,5 +282,25 @@ jurisconsult-agentic-rag/
 │   └── vite.config.js
 ├── data/
 │   └── summaries_cache.json          # Cache pré-calculé des résumés juridiques
+```
+
+ ---
+## Livrables
+
+| Livrable | Lien |
+|---|---|
+| **Vidéo de présentation** | [Voir la vidéo]([https://LIEN_DE_LA_VIDEO](https://youtu.be/EuvapwFRdoM?si=UbKcT1USTJY4vPRh)) |
+| **Rapport de projet** | [Lire le rapport](https://LIEN_DU_RAPPORT) |
+
+## Auteurs
+
+| Nom | 
+|---|
+| ANTON NELCON Steve |
+| LIMACHE Adrien |
+
+Projet basé sur le dépôt d'origine [AdrienLIMACHE/jurisconsult-agentic-rag](https://github.com/AdrienLIMACHE/jurisconsult-agentic-rag).
+
+*Dernière mise à jour : 21 octobre 2026*
 └── requirements.txt                  # Dépendances Python du projet
 ```
