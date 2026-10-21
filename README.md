@@ -50,6 +50,73 @@ flowchart TD
 ```
 
 ---
+## Technologies et Environnement
+
+### Langages
+
+| | Langage | Utilisation |
+|:---:|---|---|
+| <img src="https://cdn.simpleicons.org/python" width="28" height="28" alt="Python"> | **Python 3.10+** | Backend, agent LangGraph, scripts de préparation des données et d'indexation |
+| <img src="https://cdn.simpleicons.org/javascript" width="28" height="28" alt="JavaScript"> | **JavaScript (JSX)** | Interface utilisateur React |
+
+### Backend
+
+| | Outil | Rôle |
+|:---:|---|---|
+| <img src="https://cdn.simpleicons.org/fastapi" width="28" height="28" alt="FastAPI"> | **FastAPI** + **Uvicorn** | API REST et streaming Server-Sent Events (SSE) |
+| | **LangGraph** (`StateGraph`) | Orchestration de l'agent (7 noeuds, boucle de vérification) |
+| <img src="https://cdn.simpleicons.org/langchain" width="28" height="28" alt="LangChain"> | **LangChain** | Définition des outils (`@tool`) et chaîne RAG |
+| <img src="https://cdn.simpleicons.org/pydantic" width="28" height="28" alt="Pydantic"> | **Pydantic** | Validation des schémas (`AgentStep`, `AgentMetrics`, `ChatResponse`) |
+| <img src="https://cdn.simpleicons.org/apacheparquet" width="28" height="28" alt="Parquet"> | **PyArrow / Parquet** | Lecture à la demande du corpus, sans le charger entièrement en mémoire |
+
+### Recherche et IA
+
+| | Composant | Détail |
+|:---:|---|---|
+| <img src="https://cdn.simpleicons.org/ollama" width="28" height="28" alt="Ollama"> | **LLM local** | Qwen 2.5 1.5B, exécuté via **Ollama** (~986 Mo) |
+| <img src="https://cdn.simpleicons.org/huggingface" width="28" height="28" alt="Hugging Face"> | **Embeddings** | `SentenceTransformers` (`all-MiniLM-L6-v2`) |
+| | **Base vectorielle** | **ChromaDB** (persistante, dossier `chroma_db/`) |
+| | **Recherche lexicale** | **BM25** (index `data/bm25_index.pkl`) |
+| | **Recherche hybride** | 50 % BM25 + 50 % ChromaDB, puis re-ranking structurel |
+| | **Découpage** | Chunks de 1 500 caractères, chevauchement de 200 |
+
+### Frontend
+
+| | Outil | Rôle |
+|:---:|---|---|
+| <img src="https://cdn.simpleicons.org/react" width="28" height="28" alt="React"> | **React** | Interface (recherche, lecteur de décisions, trace de l'agent) |
+| <img src="https://cdn.simpleicons.org/vite" width="28" height="28" alt="Vite"> | **Vite** | Serveur de développement et build |
+| <img src="https://cdn.simpleicons.org/mermaid" width="28" height="28" alt="Mermaid"> | **Mermaid** | Affichage du graphe de l'agent |
+| <img src="https://cdn.simpleicons.org/npm" width="28" height="28" alt="npm"> | **npm** | Gestion des dépendances (Node.js 18+) |
+
+### Données
+
+| | Élément | Détail |
+|:---:|---|---|
+| <img src="https://cdn.simpleicons.org/huggingface" width="28" height="28" alt="Hugging Face"> | **Source** | Dataset Hugging Face [`antoinejeannot/jurisprudence`](https://huggingface.co/datasets/antoinejeannot/jurisprudence) |
+| | **Périmètre** | Décisions civiles du Tribunal judiciaire de Paris |
+| <img src="https://cdn.simpleicons.org/apacheparquet" width="28" height="28" alt="Parquet"> | **Format** | Parquet (`tribunal_judiciaire.parquet`, puis `data/corpus_sampled.parquet`) |
+
+### Environnement d'exécution
+
+| | Élément | Valeur |
+|:---:|---|---|
+| | **Systèmes testés** | Windows (PowerShell), Linux, macOS |
+| | **Exécution** | 100 % locale, aucune clé API requise |
+| <img src="https://cdn.simpleicons.org/python" width="28" height="28" alt="Python"> | **Environnement Python** | `venv` |
+| | **Matériel conseillé** | RAM : ... Go, espace disque : ... Go (modèle, corpus, index) |
+| | **Ports utilisés** | 8000 (API), 5173 (interface), 11434 (Ollama) |
+
+### Outils de développement
+
+| | Outil | Rôle |
+|:---:|---|---|
+| <img src="https://cdn.simpleicons.org/git" width="28" height="28" alt="Git"> | **Git** | Versionnage |
+| <img src="https://cdn.simpleicons.org/github" width="28" height="28" alt="GitHub"> | **GitHub** | Hébergement du code |
+| <img src="https://cdn.simpleicons.org/swagger" width="28" height="28" alt="Swagger"> | **Swagger UI** | Documentation interactive de l'API sur `/docs` |
+| <img src="https://cdn.simpleicons.org/visualstudiocode" width="28" height="28" alt="VS Code"> | **VS Code** | Éditeur de code |
+
+---
 
 ## Guide d'Installation Complet de A à Z
 
