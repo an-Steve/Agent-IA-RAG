@@ -1,11 +1,7 @@
 # JurisConsult AI — Agentic RAG pour l'Analyse de Jurisprudence
-> Module : Implémentation  de cas d'usages industriels
+> Module : Implémentation  de cas d'usages industriels - Université Paris 8
+> Réalisé par ANTON NELCON Steve -LIMACHE Adrien
 
-## Membres du projet
-
-| Membre 1 | Membre 2 | |
-|----------|----------|----------|
-| ANTON NELCON Steve | LIMACHE Adrien | 
 
 
 > **Dépôt d'origine :** [https://github.com/AdrienLIMACHE/jurisconsult-agentic-rag](https://github.com/AdrienLIMACHE/jurisconsult-agentic-rag)  
