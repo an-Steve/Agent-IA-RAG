@@ -13,6 +13,10 @@
 > Corpus : Décisions civiles du **Tribunal judiciaire de Paris** (*dataset Hugging Face `antoinejeannot/jurisprudence`*)
 
 ---
+## Vidéo de Démonstration de la Vidéo :
+
+Lien de la vidéo de démonstration du projet : https://youtu.be/EuvapwFRdoM?si=UbKcT1USTJY4vPRh
+
 
 ## Présentation de l'Architecture
 
