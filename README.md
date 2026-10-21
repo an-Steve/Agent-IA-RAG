@@ -1,5 +1,12 @@
 # JurisConsult AI — Agentic RAG pour l'Analyse de Jurisprudence
 
+## Membres du projet
+
+| Membre 1 | Membre 2 | |
+|----------|----------|----------|
+| ANTON NELCON Steve | LIMACHE Adrien | 
+
+
 > **Dépôt d'origine :** [https://github.com/AdrienLIMACHE/jurisconsult-agentic-rag](https://github.com/AdrienLIMACHE/jurisconsult-agentic-rag)  
 > **Système Agentique Multi-Outils orchestré par LangGraph (`StateGraph`), Recherche Hybride (`BM25` + `ChromaDB`) et LLM Local (`Qwen 2.5 1.5B` via Ollama)**  
 > Corpus : Décisions civiles du **Tribunal judiciaire de Paris** (*dataset Hugging Face `antoinejeannot/jurisprudence`*)
