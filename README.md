@@ -1,4 +1,5 @@
 # JurisConsult AI — Agentic RAG pour l'Analyse de Jurisprudence
+> Module : Implémentation  de cas d'usages industriels
 
 ## Membres du projet
 
