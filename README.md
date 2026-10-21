@@ -312,7 +312,7 @@ jurisconsult-agentic-rag/
 
 | Livrable | Lien |
 |---|---|
-| **Vidéo de présentation** | [Voir la vidéo]([https://LIEN_DE_LA_VIDEO](https://youtu.be/EuvapwFRdoM?si=UbKcT1USTJY4vPRh)) |
+| **Vidéo de présentation** | [(https://youtu.be/EuvapwFRdoM?si=UbKcT1USTJY4vPRh)]|
 | **Rapport de projet** | [Lire le rapport](https://LIEN_DU_RAPPORT) |
 
 ## Auteurs
