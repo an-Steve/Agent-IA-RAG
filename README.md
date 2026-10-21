@@ -13,6 +13,9 @@
 
 Lien de la vidéo de démonstration du projet : https://youtu.be/EuvapwFRdoM?si=UbKcT1USTJY4vPRh
 
+<img width="1917" height="872" alt="image" src="https://github.com/user-attachments/assets/a31e6439-49b8-4780-a56d-1b5fc049a20a" />
+
+
 
 ## Présentation de l'Architecture
 
